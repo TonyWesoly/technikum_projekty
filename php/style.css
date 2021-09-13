@@ -1,0 +1,19 @@
+#header{
+	background-color:#659bf2;
+	height: 100px; 
+	/*width: 90%;*/
+}
+#content{
+	background-color:#83a7c1;
+	/*width: 90%;*/
+	height: 500px; 
+
+}
+#footer{
+	background-color:#659bf2;
+	height: 60px; 
+	/*width: 90%;*/
+}
+.button{
+	
+}

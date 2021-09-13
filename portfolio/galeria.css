@@ -1,0 +1,39 @@
+.zdjecie{
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.zdjecie img{
+	transition:all 0.3s ease-in-out;
+}
+
+.zdjecie:hover img{
+	-webkit-transform:scale(1.15);
+	-ms-transform:scale(1.15);
+	transform: scale(1.15);
+	/*trasition: all 1s ease-in-out;*/
+}
+
+.pojemnik_na_zdjecie{
+	display: inline-block;
+	margin:2.5%;
+	text-align: center;
+	width: 40%;
+	height: 24.72%;
+	min-width: 404.5px;
+	min-height: 250px;
+	max-width: 500px;
+	max-height: 309px;
+}
+
+/*img{
+	height: auto;
+	width: 100%;
+}*/
+
+/*.zdjecie img{
+	position: relative;
+	top:50%;
+	left:50%;
+}*/

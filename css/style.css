@@ -1,0 +1,139 @@
+body{
+	font-size: 120%;
+}
+
+#cialo{
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5%;
+}
+
+#menu{
+	text-align:center;
+}
+
+.przycisk_container{
+	display: inline-block;
+}
+
+.przycisk{
+	float: left;
+	padding:10px;
+	background-color:#4286f4;
+	margin:5px;
+	min-width: 60px;
+	text-align:center;
+}
+
+#anim{
+	height: 200px;
+	width:200px;
+    background-color: greenyellow;
+    transition: transform .2s ease-in-out;
+}
+
+#anim:hover{
+    transform: rotate(25deg) scale(0.85);
+}
+
+a{
+	text-decoration: none;
+	color:white;
+}
+
+#tresc{
+
+}
+
+#przyklad{
+	float: left;
+	width:30%;
+}
+
+#kod_css{
+	float: left;
+	width: 70%;
+}
+
+#grad{
+	width: 200px;
+	height: 200px;
+  	background-image: linear-gradient(red, yellow, green);
+}
+
+body{
+	font-size: 120%;
+}
+
+#cialo{
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5%;
+}
+
+#menu{
+	text-align:center;
+}
+
+.przycisk_container{
+	display: inline-block;
+}
+
+.przycisk{
+	float: left;
+	padding:10px;
+	background-color:#4286f4;
+	margin:5px;
+	min-width: 60px;
+	text-align:center;
+}
+
+#anim{
+	height: 200px;
+	width:200px;
+    background-color: greenyellow;
+    transition: transform .2s ease-in-out;
+}
+
+#anim:hover{
+    transform: rotate(25deg) scale(0.85);
+}
+
+a{
+	text-decoration: none;
+	color:white;
+}
+
+#tresc{
+
+}
+
+#przyklad{
+	float: left;
+	width:30%;
+}
+
+#kod_css{
+	float: left;
+	width: 70%;
+}
+
+#grad{
+	width: 200px;
+	height: 200px;
+  	background-image: linear-gradient(red, yellow, green);
+}
+
+#anim2{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+ 	 animation-name: example;
+ 	 animation-duration: 4s;
+}
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}

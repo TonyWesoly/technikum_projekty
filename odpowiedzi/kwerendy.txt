@@ -1,0 +1,24 @@
+1) select kraj_urodzenia,count(DISTINCT aktorzy.id_aktora) as ilosc from aktorzy 
+inner join nagrody on aktorzy.id_aktora = nagrody.id_aktora
+GROUP by kraj_urodzenia
+order by ilosc
+
+2) SELECT imie,nazwisko, (filmy.rok - left(aktorzy.data_ur,4)) as wiek FROM `aktorzy` 
+INNER join nagrody on nagrody.id_aktora = aktorzy.id_aktora
+INNER join filmy on nagrody.id_filmu = filmy.id_filmu
+order by wiek limit 1
+
+3) SELECT imie,nazwisko,rok,tytul FROM `aktorzy` INNER join nagrody on nagrody.id_aktora = aktorzy.id_aktora INNER join filmy on nagrody.id_filmu = filmy.id_filmu where aktorzy.id_aktora = (SELECT aktorzy.id_aktora FROM `aktorzy` INNER join nagrody on nagrody.id_aktora = aktorzy.id_aktora INNER join filmy on nagrody.id_filmu = filmy.id_filmu group by aktorzy.id_aktora ORDER by count(*) desc limit 1)
+
+4) SELECT aktorzy.imie,aktorzy.nazwisko from aktorzy
+INNER join
+(SELECT DISTINCT id_aktora,id_filmu from nagrody
+where nagrody.kategoria like "%pierwsz%"
+and id_aktora in (select id_aktora from nagrody where kategoria 
+like "%drug%")) as nag
+on nag.id_aktora = aktorzy.id_aktora
+INNER join filmy
+on nag.id_filmu = filmy.id_filmu
+
+
+select pierw.imie,pierw.nazwisko,max(abs(pierw.rok - drug.rok)) from pierw INNER join drug on pierw.id_aktora = drug.id_aktora group by pierw.id_aktora

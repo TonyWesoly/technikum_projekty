@@ -1,0 +1,35 @@
+body{
+  background-color: #4286f4;
+}
+
+#header {
+  background-color: #99b7e8;
+  text-align: center;
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  transition: 0.3s;
+}
+
+#content{
+  height: 1500px;
+  background-color: #4286f4;
+}
+
+#footer{
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background-color: #99b7e8;
+}
+
+.button{
+  border-radius: 5px;
+  display: block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background-color: darkgrey;
+  margin-left: 30%;
+  float: left;
+}

@@ -1,0 +1,27 @@
+U¯YTKOWNICY:
+	user_id		- unikalny identyfikator u¿ytkownika
+	acc_type	- typ konta (0 - normalny; 1 - administrator)
+	login		- nazwa u¿ytkownika
+	passwd		- has³o dostêpu do konta
+	email		- adres mailowy przypisany do konta
+	name		- imie osoby
+	surname		- nazwisko
+
+FILMY:
+	movie_id	- unikalny identyfikator filmu
+	title_pl	- polski tytul filmu
+	title_org	- oryginalny tytu³ filmu
+	genre		- gatunek (np. horror, romans,  film akcji etc.)
+	director	- rezyser
+	prod_yr		- rok produkcji
+	descr		- krótki opis filmu
+	price		- cena wypozyczenia (za dzieñ)
+
+WYPO¯YCZENIA:
+	rent_id		- unikalny identyfikator wypo¿yczenia
+	user_id		- identyfikator uzytkownika (kto wypo¿yczy³)
+	movie_id	- identyfikator filmu (co wypo¿yczy³)
+	rent_date	- data wypo¿yczenia (kiedy wypo¿yczona)
+	retrn_date	- termin zwrotu (kiedy nale¿y oddaæ)
+
+admin zaq1@WSX

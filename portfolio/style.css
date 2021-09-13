@@ -1,0 +1,87 @@
+body{
+	margin: 0 !important;
+	font-family: 'Roboto Condensed', sans-serif !important;
+	color:black;
+	font-size: 100%;
+}
+
+#container_strona_glowna{
+	background: #414241 url("gosia_background.jpg") no-repeat center center;
+	background-size: cover;
+	height: 100%;
+}
+
+#container_podstrony{
+	background-color: #ffffff;
+	height: 100%;
+}
+
+#left{
+	width:20%;
+	height: 100%;
+	float:left;
+	min-width: 180px;
+}
+
+/*#right_container{
+	float:left;
+	width: 80%;
+	height: 100%;
+}*/
+
+#right{
+	float:left;
+	width:72%;
+	height: 85%;
+	text-align: justify;
+	/*padding:5%;*/
+	/*margin:auto;*/
+	padding: 2%;
+	padding-right: 6%;
+	/*margin-bottom: auto;*/
+	font-size:150%;
+}
+
+#left_menu{
+	padding: 2%;
+	width:16%;
+	height: 94%;
+	position: fixed;
+	top:0;
+	left:0;
+}
+
+#logo{
+	font-weight: 700;
+	font-size: 170%;
+	letter-spacing: 0.1%;
+	height: 15%;
+}
+
+#menu{
+	margin-top: 2%;
+	overflow:hidden;
+	min-width:200px;
+	height: 73%;
+}
+
+#socials{
+	height: 10%; 
+}
+
+ul{
+	padding-left: 0;
+}
+
+li{
+	display: inline;
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+
+a:hover{
+	color:#9fc98d;
+}

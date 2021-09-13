@@ -1,0 +1,78 @@
+.container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.game{
+	width: 50vw;
+	height: 50vw;
+	max-height: 80vh;
+	max-width: 80vh;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: flex-start;
+}
+
+.white{
+	background-color: #FFFFFF;
+}
+
+.black{
+	background-color: #000000;
+}
+
+.field{
+	width: 6.25vw;
+	height: 6.25vw;
+	max-height: 10vh;
+	max-width: 10vh;
+	/* width: 6.25%;
+   padding-top: 6.25%; */
+	position: relative;
+	user-select: none;
+	background-image: url("img/bg.png");
+	/* background-size: 31.25vw 6.25vw; */
+	background-size: 50vh 10vh;
+	/* background-size: 31.25vw 6.25vw; */
+	/* background-size: 31.25% 6.25%; */
+}
+
+.field img{
+	width: 6.25vw;
+	height: 6.25vw;
+	max-height: 10vh;
+	max-width: 10vh;
+	/* width: 6.25%;
+   padding-top: 6.25%; */
+	top:0px;
+	left: 0px;
+	position: absolute;
+	z-index: 1;
+}
+
+
+.canMove{
+	cursor: pointer;
+}
+
+.blueDiv{
+	width: 6.25vw;
+	height: 6.25vw;
+	max-height: 10vh;
+	max-width: 10vh;
+	/* width: 6.25%;
+   padding-top: 6.25%; */
+	background-color: #FFFFFF;
+	top:0px;
+	left: 0px;
+	position: absolute;
+	z-index: 2;
+	opacity: .0;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html lang="pl">
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="galeria.css">
+	<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css">
+	<meta charset="utf-8">
+	<title>GALERIA</title>
+</head>
+<body>
+	<div id="container_podstrona">
+		<div id="left_menu">
+			<div id="logo">
+				<a href="zatrudni-fotografa">
+					MAŁGORZATA JANICKA</br>
+					FOTOGRAFIA
+				</a>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="moja-galeria">GALERIA</a></li></br>
+					<li><a href="faq">FAQ</a></li></br>
+					<li><a href="kontakt">KONTAKT</a></li></br>
+					<li><a href="kim-jestem">O MNIE</a></li></br>
+				</ul>
+			</div>
+			<div id="socials">
+				<a href="https://twitter.com/" target="_blank">
+					<i class="icon-twitter-squared" style="float:left;"></i>
+				</a>
+				<a href="https://www.facebook.com/" target="_blank">
+					<i class="icon-facebook-squared" style="float:left;"></i>
+				</a>
+				<a href="https://www.instagram.com/" target="_blank">
+					<i class="icon-instagram" style="float:left;"></i>
+				</a>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div id="left"></div>
+		<div id="right">
+			<p style="font-size:200%;font-weight: 700;"><b>Galeria</b></p>
+			<div class="pojemnik_na_zdjecie">
+				<div class="zdjecie">
+					<a href="galeria/1.jpg" target="_blank">
+						<img src="galeria/1.jpg" class="img_src">
+					</a>
+				</div>
+			</div>
+			<div class="pojemnik_na_zdjecie">
+				<div class="zdjecie">
+					<a href="galeria/2.jpg" target="_blank">
+						<img src="galeria/2.jpg" class="img_src">
+					</a>
+				</div>
+			</div>
+			<div class="pojemnik_na_zdjecie">
+				<div class="zdjecie">
+					<a href="galeria/3.jpg" target="_blank">
+						<img src="galeria/3.jpg" class="img_src">
+					</a>
+				</div>
+			</div>
+			<div class="pojemnik_na_zdjecie">
+				<div class="zdjecie">
+					<a href="galeria/4.jpg" target="_blank">
+						<img src="galeria/4.jpg" class="img_src">
+					</a>
+				</div>
+			</div>
+			<div class="pojemnik_na_zdjecie">
+				<div class="zdjecie">
+					<a href="galeria/5.jpg" target="_blank">
+						<img src="galeria/5.jpg" class="img_src">
+					</a>
+				</div>
+			</div>
+			<div class="pojemnik_na_zdjecie">
+				<div class="zdjecie">
+					<a href="galeria/6.jpg" target="_blank">
+						<img src="galeria/6.jpg" class="img_src">
+					</a>
+				</div>
+			</div>
+			<div class="pojemnik_na_zdjecie">
+				<div class="zdjecie">
+					<a href="galeria/7.jpg" target="_blank">
+						<img src="galeria/7.jpg" class="img_src">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+		window.onload=resize;
+		function resize(){
+			a=document.getElementsByClassName("img_src");
+			for (var i = 0; i < a.length; i++) {
+				//console.log(a[i].height+", "+a[i].width);
+				// if(a[i].height==a[i].width){
+				// 	a[i].style.width="100%";
+				// 	a[i].style.height="100%";
+				// }
+				if((a[i].width/a[i].height)>1.618){
+					a[i].style.height="100%";
+					a[i].style.width="auto";
+				}
+				else
+				{
+					a[i].style.width="100%";
+					a[i].style.height="auto";
+				}
+			}
+		}
+	</script>
+</body>
+</html>
